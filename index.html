@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiqih Zone - Belajar Fiqih</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h2>FIQIH<span>ZONE.</span></h2>
+
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#materi">Materi</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#about">Tentang</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+  <div class="hero-text">
+    <p class="tag">ISLAMIC LEARNING WEBSITE</p>
+
+    <h1>Belajar Fiqih<br>
+      Lebih Mudah & Menyenangkan
+    </h1>
+
+    <p>
+      Pelajari dasar-dasar ilmu Fiqih,
+      pahami hukum Islam, dan terapkan
+      dalam kehidupan sehari-hari.
+    </p>
+
+    <a href="#materi" class="btn">Mulai Belajar →</a>
+  </div>
+
+  <div class="hero-icon">
+    <span>☪</span>
+    <p>الفقه الإسلامي</p>
+    <small>Belajar Ilmu Fiqih</small>
+  </div>
+</section>
+
+<!-- MATERI -->
+<section class="section" id="materi">
+  <p class="tag">LEARNING MATERIAL</p>
+  <h2>Materi Pembelajaran</h2>
+  <p class="subtitle">
+    Pilih materi yang ingin kamu pelajari.
+  </p>
+
+  <input
+    type="text"
+    id="search"
+    placeholder="Cari materi Fiqih..."
+  >
+
+  <div class="materi-container" id="materiList">
+
+    <div class="materi-card" data-id="thaharah">
+      <div class="materi-icon">💧</div>
+      <h3>Thaharah</h3>
+      <p>Materi tentang bersuci dari hadas dan najis.</p>
+      <button class="detail-btn">Pelajari →</button>
+    </div>
+
+    <div class="materi-card" data-id="shalat">
+      <div class="materi-icon">🕌</div>
+      <h3>Shalat</h3>
+      <p>Pengertian, syarat, rukun, dan sunnah shalat.</p>
+      <button class="detail-btn">Pelajari →</button>
+    </div>
+
+    <div class="materi-card" data-id="puasa">
+      <div class="materi-icon">🌙</div>
+      <h3>Puasa</h3>
+      <p>Ketentuan puasa dan hal-hal yang membatalkannya.</p>
+      <button class="detail-btn">Pelajari →</button>
+    </div>
+
+    <div class="materi-card" data-id="zakat">
+      <div class="materi-icon">🤲</div>
+      <h3>Zakat</h3>
+      <p>Pengertian, jenis, dan golongan penerima zakat.</p>
+      <button class="detail-btn">Pelajari →</button>
+    </div>
+
+    <div class="materi-card" data-id="haji">
+      <div class="materi-icon">🕋</div>
+      <h3>Haji & Umrah</h3>
+      <p>Mempelajari rukun dan ketentuan haji serta umrah.</p>
+      <button class="detail-btn">Pelajari →</button>
+    </div>
+
+    <div class="materi-card" data-id="muamalah">
+      <div class="materi-icon">🤝</div>
+      <h3>Muamalah</h3>
+      <p>Hukum jual beli dan hubungan antarmanusia.</p>
+      <button class="detail-btn">Pelajari →</button>
+    </div>
+
+  </div>
+
+  <p id="emptySearch" hidden>Materi tidak ditemukan.</p>
+</section>
+
+<!-- DETAIL MATERI -->
+<section class="detail-section" id="detailSection" hidden>
+  <div class="detail-content">
+    <button id="closeDetail" class="close-btn">✕ Tutup</button>
+    <p class="tag">MATERI FIQIH</p>
+    <h2 id="detailTitle"></h2>
+    <div id="detailText"></div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section class="section quiz-section" id="quiz">
+  <p class="tag">TEST YOUR KNOWLEDGE</p>
+  <h2>Uji Pemahamanmu!</h2>
+  <p class="subtitle">
+    Kerjakan soal berikut untuk menguji pemahaman Fiqih.
+  </p>
+
+  <div class="quiz-box">
+    <p id="questionNumber">Soal 1 dari 5</p>
+    <h3 id="question">Apa pengertian Thaharah?</h3>
+
+    <div id="answers"></div>
+
+    <p id="feedback"></p>
+
+    <button id="nextBtn" class="btn" hidden>
+      Soal Berikutnya
+    </button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <h2>Tentang Fiqih Zone</h2>
+  <p>
+    Fiqih Zone merupakan website pembelajaran
+    yang dibuat untuk membantu pelajar memahami
+    dasar-dasar ilmu Fiqih secara mudah dan praktis.
+  </p>
+
+  <p class="arabic">العلم نور</p>
+  <small>Ilmu adalah cahaya.</small>
+</section>
+
+<footer>
+  <p>© 2026 Fiqih Zone | Islamic Learning Website</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
